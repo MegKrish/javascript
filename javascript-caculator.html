@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Calculate</title>
+</head>
+<body>
+  
+  <form name="formcalc">
+    
+   Number 1: <input type="text" name"txtnum1" ><br>
+   Number 2: <input type="text" name"txtnum2" > <br>
+   Results: <input type="text" name"txtres" >
+   
+    <input type="button" value="Calucate" onClick="sumValues">
+  
+  </form>  
+  
+  <script>
+  
+  
+ function sumValues(){
+  var num1,num1,res;
+  num1=Number(document.formcalc.txtnum1.value);
+  num2=Number(document.formcalc.txtnum2.value);
+  res=num1+num2;
+  document.formcalc.txtres.value=res;
+};
+  
+  </script>  
+
+</body>
+</html>
